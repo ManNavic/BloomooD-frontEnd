@@ -1,38 +1,26 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: white;
+  min-width: 860px;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-image: url('/assets/images/CY1A9574-transformed.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.App-main {
+  width: 1120px;
+  min-height: 90%;
+  margin: 10px;
+  padding: 5px;
+  background: rgba(230, 228, 228, 0.734);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 7px;
+  box-shadow: 10px 10px 10px rgb(190, 185, 185);
+  display: grid;
 }
