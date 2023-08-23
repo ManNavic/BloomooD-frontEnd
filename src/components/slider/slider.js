@@ -1,5 +1,4 @@
 import './slider.css'
-import plant from './images/isolated-plant-pot_92267-310-fotor-bg-remover-2023072811217.png'
 import React, { useState, useEffect } from 'react';
 
 const Slider = () => {
@@ -19,6 +18,7 @@ const Slider = () => {
     };
   
     useEffect(() => {
+    autoslider()
       getFeedItems();
     }, []);
     const getRandomItems = (array, count) => {
@@ -28,6 +28,37 @@ const Slider = () => {
     
       // Display 4 random feed items
       const randomFeedItems = getRandomItems(feedItems, 4);
+      const autoslider = () => {
+        let counter = 1;
+        const totalSlides = 4;
+        let intervalId;
+      
+        const moveSlider = () => {
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+      
+          if (counter > totalSlides) {
+            counter = 1;
+          }
+        };
+      
+        intervalId = setInterval(moveSlider, 5000);
+      
+        // Pause the interval when the slider is hovered over
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', () => {
+          clearInterval(intervalId);
+        });
+      
+        // Resume the interval when the mouse leaves the slider
+        slider.addEventListener('mouseleave', () => {
+          intervalId = setInterval(moveSlider, 5000);
+        });
+      
+        // Clear the interval when the component unmounts
+        return () => clearInterval(intervalId);
+      };
+      
   return (
     <div className="slider">
       <div className="slides">
@@ -70,6 +101,7 @@ const Slider = () => {
         <label htmlFor="radio4" className="manual-btn"></label>
       </div>
     </div>
+    
   )
 }
 export default Slider
