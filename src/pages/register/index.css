@@ -1,0 +1,166 @@
+.register {
+  width: 800px;
+  height: 700px;
+  background-color: rgba(221, 224, 227, 0.447);
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(190, 185, 185);
+}
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+.input-container-profile {
+    display: flex;
+    justify-content: center; /* Distribute space between inputs */
+  }
+.input-container-profile > .lastname {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 272px;
+  max-width: 75%;
+  border-radius: 50px;
+  border: 0;
+}
+.input-container-profile > .firstname {
+  padding-left: 10px;
+  font-size: 30px;
+width: 272px;
+  max-width: 75%;
+  border-radius: 50px;
+  border: 0;
+}
+.input-container-address{
+    display: flex;
+    justify-content: center; /* Distribute space between inputs */
+}
+.input-container-address > .street {
+    padding-left: 10px;
+    margin-top: 40px;
+    font-size: 30px;
+  width: 272px;
+    max-width: 75%;
+    border-radius: 50px;
+    border: 0;
+    position: relative;
+
+}
+.input-container-address > .number {
+    margin-top: 40px;
+    padding-left: 10px;
+    font-size: 30px;
+  width: 272px;
+    max-width: 75%;
+    border-radius: 50px;
+    border: 0;
+}
+.input-container-address-line-2{
+    display: flex;
+    justify-content: center; /* Distribute space between inputs */
+}
+.input-container-address-line-2 > .city {
+    padding-left: 10px;
+    margin-top: 40px;
+    font-size: 30px;
+  width: 272px;
+    max-width: 75%;
+    border-radius: 50px;
+    border: 0;
+    position: relative;
+}
+.input-container-address-line-2 > .postcode {
+    padding-left: 10px;
+    margin-top: 40px;
+    font-size: 30px;
+  width: 272px;
+    max-width: 75%;
+    border-radius: 50px;
+    border: 0;
+    position: relative;
+}
+.input-container-address-line-3{
+    display: flex;
+    justify-content: center; /* Distribute space between inputs */
+}
+.input-container-address-line-3 > .country {
+    color: grey;
+    margin-top: 40px;
+    padding-left: 10px;
+    font-size: 30px;
+    min-width: 70%;
+    max-width: 72%;
+    height: 36px;
+    border-radius: 50px;
+    border: 0;
+
+}
+.reg-button {
+  position: absolute;
+  font-size: 30px;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  top: 580px;
+  left: 240px;
+}
+.eye-icon {
+  position: relative;
+  width: 30px;
+  bottom: 38px;
+  left: 620px;
+}
+.input-label-email {
+  font-size: 20px;
+  position: relative;
+  right: 250px;
+}
+.input-label-password {
+  font-size: 20px;
+  position: relative;
+  right: 235px;
+}
+.input-label-first-name{
+    position: absolute;
+    bottom: 430px;
+    font-size: 20px;
+    right: 586px;
+}
+.input-label-last-name{
+    position: absolute;
+    bottom: 430px;
+    font-size: 20px;
+    right: 295px;
+}
+.input-label-street{
+    position: absolute;
+left: 125px;
+top: 320px;
+    font-size: 20px;
+  
+}
+.input-label-house-number{
+    position: absolute;
+left: 410px;
+top: 320px;
+    font-size: 20px;
+  
+}
+.input-label-city{
+    position: absolute;
+left: 120px;
+top: 397px;
+    font-size: 20px;
+  
+}
+.input-label-post-code{
+    position: absolute;
+left: 410px;
+top: 397px;
+    font-size: 20px;
+  
+}
