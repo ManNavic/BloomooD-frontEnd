@@ -4,7 +4,7 @@ import Index from './pages/index/index';
 import Register from './pages/register/index';
 import Login from './pages/login/index';
 import './App.css';
-import Profile from "./pages/profile";
+
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Index />} />
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/profile" element={<Profile/>}/>
+
 
         </Routes>
       </BrowserRouter>
