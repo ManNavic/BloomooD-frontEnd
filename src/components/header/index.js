@@ -86,15 +86,14 @@ const tokenValidation = () => {
           Welcome to <span>Bloomood</span>
           <br />
           {user && user.profile && user.profile[0] && (
-            <p>
+            <i>
               {user.profile[0].firstName} {user.profile[0].lastName}
-            </p>
+            </i>
           )}
         </p>
         <ul>
           <DropdownItem img={profileSvg} text={'My Profile'}  />
           <DropdownItem img={editProfileSvg} text={'Edit Profile'} />
-          <DropdownItem img={settingsSvg} text={'Settings'} />
           <DropdownItem img={logoutSvg} text={'Logout'} onClick={logout} />
         </ul>
       </div>
