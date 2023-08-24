@@ -34,7 +34,7 @@ const Slider = () => {
         let intervalId;
       
         const moveSlider = () => {
-          document.getElementById('radio' + counter).checked = true;
+          document.getElementById('radio' + counter)?.click();
           counter++;
       
           if (counter > totalSlides) {
@@ -42,7 +42,7 @@ const Slider = () => {
           }
         };
       
-        intervalId = setInterval(moveSlider, 5000);
+        intervalId = setInterval(moveSlider, 10000);
       
         // Pause the interval when the slider is hovered over
         const slider = document.querySelector('.slider');
