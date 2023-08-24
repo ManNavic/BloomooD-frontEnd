@@ -73,9 +73,9 @@
     --n: 4;
   }
   .menu-container {
-    position: relative;
-    left: 140px;
-    bottom: 116px;
+    position: absolute;
+left: 1100px;
+top: 20px;
     justify-self: left;
     margin-bottom: 15px;
     margin-right: 20px;
@@ -101,7 +101,7 @@
   }
   .dropdown-menu.inactive {
     opacity: 0;
-    visibility: hidden;
+    /* visibility: hidden; */
     transform: translateY(-20px);
     transition: 500ms ease;
   }
