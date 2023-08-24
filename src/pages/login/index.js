@@ -74,6 +74,7 @@ const handleSubmit = async (e) => {
           {user.email && <label className="input-label-email-login">Email</label>}{' '}
           <br></br>
           <input
+          className="email"
             placeholder="Email"
             type="text"
             name="email"
@@ -85,6 +86,7 @@ const handleSubmit = async (e) => {
           {user.password && <label className="input-label-password-login">Password</label>}{' '}
           <br></br>
           <input
+          className="password"
             placeholder="Password"
             type={showPassword ? 'text' : 'password'}
             name="password"

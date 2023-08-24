@@ -19,9 +19,9 @@ h2{
 .input-container, .password-container {
     text-align: center;
 }
-.input-container > input{
+.password, .email{
     padding-left: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     font-size: 30px;
     min-width: 70%;
     max-width: 75%;
@@ -54,13 +54,13 @@ h2{
 .input-label-password-login {
     position: absolute;
     right: 420px;
-    top: 182px;
+    top: 166px;
     font-size: 20px;
 }
 .eye-icon-login{
     position: relative;
     width: 30px;
-    bottom: 57px;
+    bottom: 38px;
     left: 450px;
 }
 
