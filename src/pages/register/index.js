@@ -3,6 +3,7 @@ import Header from '../../components/header'
 import { useNavigate } from 'react-router-dom'
 import '/Users/mantas/Desktop/Final-full-stack-project/BloomooD-frontEnd/src/pages/register/index.css'
 import countriesList from 'countries-list'
+import emailjs from '@emailjs/browser';
 const Register = () => {
   const navigate = useNavigate()
   const [user, setUser] = useState({ email: '', password: '' })
@@ -31,9 +32,10 @@ const Register = () => {
         body: JSON.stringify(user)
       })
       if (response.ok) {
+        sendRegistrationEmail()
         console.log('loggin successful')
         navigate('/login')
-        setUser({ email: '', password: '' })
+        setUser({ email: '', password: '', firstName:'', lastName:''})
       } else {
         console.error('login failed')
       }
@@ -41,6 +43,28 @@ const Register = () => {
       console.error('login failed:', error)
     }
   }
+  const sendRegistrationEmail = () => {
+    const emailParams = {
+      user_lastName : user.lastName,
+      user_firstName : user.firstName,
+      user_email: user.email,
+      user_password : user.password
+      // Customize the message as needed
+    };
+  
+    emailjs.send(
+      'service_6jkgkhp', // Replace with your service ID
+      'template_a4ngsmc', // Replace with your template ID
+      emailParams,
+      'rN98_8iqGQiEdJ9HH' // Replace with your public key
+    )
+      .then((result) => {
+        console.log('Email sent successfully:', result);
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+      });
+  };
   return (
     <>
       <Header />
