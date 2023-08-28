@@ -7,17 +7,14 @@ import './App.css';
 
 
 function App() {
+
   return (
-    <div className="App">
-        <header className="App-main">
-        </header>
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element={<Login/>}/>
-
-
         </Routes>
       </BrowserRouter>
     </div>

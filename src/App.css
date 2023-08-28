@@ -1,27 +1,7 @@
-.App {
-  background: white;
-  min-width: 860px;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-image: url('/assets/images/CY1A9574-transformed.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+.app{
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
-
-
-.App-main {
-  width: 90%;
-  min-width: 1200px;
-  min-height: 90%;
-  margin: 10px;
-  padding: 5px;
-  background: rgba(230, 228, 228, 0.734);
-  color: white;
-  border-radius: 7px;
-  box-shadow: 10px 10px 10px rgb(190, 185, 185);
-  display: grid;
+html {
+  scroll-behavior: smooth;
 }
