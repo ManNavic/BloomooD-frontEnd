@@ -1,40 +1,46 @@
 .login{
-    min-width: 580px;
-    width: 60%;
-    max-width: 600px;
-    height: 500px;
-    background-color: rgba(221, 224, 227, 0.447);
-    position: absolute;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgb(190, 185, 185);
+    position: relative;
+    top: 175px;
+    left: 150px;
+      width: 500px;
+      z-index: 0;
+      border: solid 1px black;
+      height: 450px;
 }
+.App-main-login {
+    margin-top: 80px;
+
+    height: 100vh;
+  background-image: url('https://bloomoodimg.s3.eu-north-1.amazonaws.com/leaf-with-white-background-removebg-preview.png');
+background-repeat: no-repeat;
+background-size: cover
+  }
 h2{
+    margin: 15px;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: sans-serif;
     letter-spacing: 0.3em;
     text-align: center;
+    z-index: 0;
 }
 .input-container, .password-container {
     text-align: center;
 }
 .password, .email{
     padding-left: 10px;
-    /* margin-bottom: 20px; */
-    font-size: 30px;
-    min-width: 70%;
+    font-size: 13px;
+    width: 350px;
     max-width: 75%;
-    height: 5%;
-    border-radius: 50px;
-    border: 0;
+    height: 15px;
 }
 .login-button {
-    font-size: 30px;
-    width: 300px;
-    height: 50px;
-    border-radius: 50px;
-    border: 0;
+    position: relative;
+  font-size: 15px;
+  width: 250px;
+  height: 40px;
+
 }
 .password-container > label {
     font-size: 10px;
@@ -45,27 +51,62 @@ h2{
     width: 30px;
 }
 .input-label-email-login {
-    position: absolute;
-    right: 460px;
-    top: 106px;
-    font-size: 20px;
+    font-size: 13px;
+  position: relative;
+ right: 90px;
+  font-size: 13px;
 }
   
 .input-label-password-login {
-    position: absolute;
-    right: 420px;
-    top: 166px;
-    font-size: 20px;
+    font-size: 13px;
+    position: relative;
+   right: 103px;
+    font-size: 13px;
 }
 .eye-icon-login{
     position: relative;
-    width: 30px;
-    bottom: 38px;
-    left: 450px;
+  bottom: 21px;
+  left: 380px;
+  width: 50px;
 }
+.forgot-link{
+position: relative;
+bottom: 20px;
+right: 63px;
+}
+.error-messages-login > ul> li{
+    list-style-type: none;
+    color: red;
+    font-size: 13px;
+  }
+  .error-messages-login{
+  text-align: center;
+  position: relative;
 
-    
-  
+  }
+  .not-reg{
+    text-align: center;
+    width: 350px;
+    border: solid 1px black;
+    height: 150px;
+    position: relative;
+    bottom: 100px;
+   left: 70%;
+  }
+  .not-reg>p{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+  }
+  .not-reg > button {
+    font-size: 15px;
+    width: 250px;
+    height: 40px;
+    top:40px;
+    left: 120px;
+  }
   
   
   
