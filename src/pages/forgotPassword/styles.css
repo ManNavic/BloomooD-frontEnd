@@ -1,0 +1,42 @@
+.forgot-container{
+    width: 800px;
+    height: 400px;
+    background-color: rgba(221, 224, 227, 0.447);
+   margin: auto;
+   margin-top: 150px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(190, 185, 185);
+    text-align: center;
+}
+.forgot-input{
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    margin-top: 30px;
+    padding-left: 10px;
+    font-size: 25px;
+
+}
+.forgot-button{
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    margin: 30px;
+    font-size: 20px;
+}
+.forgot-email{
+    position: relative;
+top: 27px;
+right: 220px;
+}
+h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.3em;
+    text-align: center;
+
+}
