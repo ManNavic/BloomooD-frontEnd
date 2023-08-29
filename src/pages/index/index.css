@@ -1,0 +1,10 @@
+.App{
+  background-image: url('../../../assets/images/CY1A9574-transformed.png');
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  
+  }
