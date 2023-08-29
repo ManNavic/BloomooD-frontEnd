@@ -42,7 +42,7 @@ const Slider = () => {
           }
         };
       
-        intervalId = setInterval(moveSlider, 10000);
+        intervalId = setInterval(moveSlider, 15000);
       
         // Pause the interval when the slider is hovered over
         const slider = document.querySelector('.slider');
@@ -52,14 +52,17 @@ const Slider = () => {
       
         // Resume the interval when the mouse leaves the slider
         slider.addEventListener('mouseleave', () => {
-          intervalId = setInterval(moveSlider, 5000);
+          intervalId = setInterval(moveSlider, 15000); // Resume the interval
         });
       
         // Clear the interval when the component unmounts
         return () => clearInterval(intervalId);
       };
       
+      
   return (
+    <div className='slides-container'>
+
     <div className="slider">
       <div className="slides">
         <input type="radio" name="radio-btn" id="radio1" />
@@ -68,14 +71,14 @@ const Slider = () => {
         <input type="radio" name="radio-btn" id="radio4" />
         {randomFeedItems.map((feedItem, index) => (
           <div
-            className={`slide ${index === 0 ? 'slide first' : ''}`}
-            key={index}
+          className={`slide ${index === 0 ? 'slide first' : ''}`}
+          key={index}
           >
             <div className="container">
               <div className="content-container">
-                <h2 className="title">
+                <h4 className="feed-title">
                   {feedItem.title}
-                </h2>
+                </h4>
                 <p className="content">
                   {feedItem.description}
                 </p>
@@ -101,6 +104,7 @@ const Slider = () => {
         <label htmlFor="radio4" className="manual-btn"></label>
       </div>
     </div>
+        </div>
     
   )
 }
