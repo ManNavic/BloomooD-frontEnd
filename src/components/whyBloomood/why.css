@@ -1,0 +1,27 @@
+.why-container{
+    margin-top: 100px;
+}
+.why-content-container {
+    margin-top: 200px;
+ width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .quality,
+  .delivery,
+  .help {
+    text-align: center;
+  }
+.quality-content,.delivery-content,.help-content{
+    font-size: 20px;
+ margin: 20px 70px 0px 70px;
+}
+ .bold{
+  font-weight: bold;
+ }
+  
+  
+  
+  
+  
