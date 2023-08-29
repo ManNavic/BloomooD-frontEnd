@@ -1,0 +1,118 @@
+
+.contact-us-container{
+  padding-top: 100px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    background: rgba(255, 255, 255, 0.928);
+    width:100vw;
+    min-height: 100vh;
+    background-image: url("https://bloomoodimg.s3.eu-north-1.amazonaws.com/plantimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-container{
+    position: relative;
+    top: 90px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(163, 160, 160);
+    text-align: center;
+    height: 500px;
+    margin-right: 100px;
+}
+.text-container{
+    position: relative;
+    left: 50px;
+    width: 400px;
+}
+.p1{
+    font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+.p2{
+    font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0;
+}
+.p3{
+    font-size: 20px;
+
+  font-family: sans-serif;
+  margin: 0;
+}
+.input{
+  width: 400px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.455);
+padding: 0;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.input-select{
+  width: 410px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.455);
+  padding-left: 10px;
+  font-size: 15px;
+}
+.input-message{
+  width: 385px;
+  height: 50px;
+  border-radius: 5px;
+  resize: none; 
+  padding: 10px;
+  font-size: 15px;
+}
+.form-button{
+  width: 400px;
+  height: 40px;
+  border-radius: 50px;
+  border: 0;
+
+  font-size: 20px;
+}
+h3{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+.first-select{
+  color: gray;
+}
+.input-label-contact-first-name{
+  position: relative;
+  right: 165px;
+}
+.input-label-contact-last-name{
+  position: relative;
+  right: 165px;
+}
+.input-label-contact-email{
+  position: relative;
+  right: 155px;
+}
+.input-label-contact-message{
+  position: relative;
+  right: 170px;
+}
+.input-label-contact-subject{
+  position: relative;
+  right: 175px;
+}
+.error-messages-contact{
+  position: relative;
+  right: 100px;
+  color: red;
+}
