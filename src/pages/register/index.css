@@ -1,38 +1,53 @@
-.register {
-  width: 800px;
-  height: 700px;
-  background-color: rgba(221, 224, 227, 0.447);
-  position: absolute;
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px rgb(190, 185, 185);
+
+.reg-main {
+  margin-top: 80px;
+  background-image: url('https://bloomoodimg.s3.eu-north-1.amazonaws.com/climbing-removebg-preview.png');
+  background-repeat: repeat-x;
+  border-radius: 7px;
+  justify-content: center;
+  /* align-items: center; */
+  z-index: 10000;
+  height: 100vh;
+}
+.register{
+  position: relative;
+top: 175px;
+left: 150px;
+  width: 500px;
+  z-index: 0;
+  border: solid 1px black;
+  height: 650px;
 }
 h2 {
+  margin: 15px;
   font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: sans-serif;
   letter-spacing: 0.3em;
   text-align: center;
+  z-index: 0;
 }
 .input-container-profile {
     display: flex;
-    justify-content: center; /* Distribute space between inputs */
+    justify-content: center;
   }
 .input-container-profile > .lastname {
   padding-left: 10px;
-  font-size: 30px;
-  width: 272px;
+  font-size: 15px;
+  width: 168px;
   max-width: 75%;
-  border-radius: 50px;
-  border: 0;
+  height: 15px;
+
+
 }
 .input-container-profile > .firstname {
   padding-left: 10px;
-  font-size: 30px;
-width: 272px;
+  font-size: 15px;
+  width: 168px;
   max-width: 75%;
-  border-radius: 50px;
-  border: 0;
+  height: 15px;
+
 }
 .input-container-address{
     display: flex;
@@ -40,23 +55,19 @@ width: 272px;
 }
 .input-container-address > .street {
     padding-left: 10px;
-    margin-top: 40px;
-    font-size: 30px;
-  width: 272px;
-    max-width: 75%;
-    border-radius: 50px;
-    border: 0;
-    position: relative;
+    height: 15px;
+    font-size: 15px;
+  width: 168px;
+
 
 }
 .input-container-address > .number {
-    margin-top: 40px;
+
     padding-left: 10px;
-    font-size: 30px;
-  width: 272px;
-    max-width: 75%;
-    border-radius: 50px;
-    border: 0;
+    font-size: 15px;
+  width: 168px;
+  height: 15px;
+  
 }
 .input-container-address-line-2{
     display: flex;
@@ -64,23 +75,20 @@ width: 272px;
 }
 .input-container-address-line-2 > .city {
     padding-left: 10px;
-    margin-top: 40px;
-    font-size: 30px;
-  width: 272px;
-    max-width: 75%;
-    border-radius: 50px;
-    border: 0;
-    position: relative;
+    margin-top: 20px;
+    font-size: 15px;
+  width: 168px;
+  height: 15px;
+
+
 }
 .input-container-address-line-2 > .postcode {
     padding-left: 10px;
-    margin-top: 40px;
-    font-size: 30px;
-  width: 272px;
-    max-width: 75%;
-    border-radius: 50px;
-    border: 0;
-    position: relative;
+    font-size: 15px;
+  width: 168px;
+    margin-top: 20px;
+    height: 15px;
+
 }
 .input-container-address-line-3{
     display: flex;
@@ -88,89 +96,124 @@ width: 272px;
 }
 .input-container-address-line-3 > .country {
     color: grey;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-left: 10px;
-    font-size: 30px;
-    min-width: 70%;
-    max-width: 72%;
+    font-size: 15px;
     height: 36px;
-    border-radius: 50px;
-    border: 0;
+width: 368px;
+height: 25px;
 
 }
 .reg-button {
-  position: absolute;
-  font-size: 30px;
-  width: 300px;
-  height: 50px;
-  border-radius: 50px;
-  border: 0;
-  top: 580px;
-  left: 240px;
+  position: relative;
+  font-size: 15px;
+  width: 250px;
+  height: 40px;
+  top:40px;
+  left: 120px;
 }
 .eye-icon {
   position: relative;
-  width: 30px;
-  bottom: 38px;
-  left: 620px;
+  bottom: 21px;
+  left: 380px;
+  width: 50px;
 }
 .input-label-email {
-  font-size: 20px;
+  font-size: 13px;
   position: relative;
-  right: 250px;
+ right: 140px;
+  font-size: 13px;
 }
 .input-label-password {
-  font-size: 20px;
+  font-size: 13px;
   position: relative;
-  right: 235px;
+  right: 152px;
+  font-size: 13px;
 }
 .input-label-first-name{
     position: absolute;
-    bottom: 430px;
-    font-size: 20px;
-    right: 586px;
+    font-size: 13px;
+    right: 370px;
+    bottom: 432px;
 }
 .input-label-last-name{
     position: absolute;
-    bottom: 430px;
-    font-size: 20px;
-    right: 295px;
+    font-size: 13px;
+    right: 188px;
+    bottom: 432px;
 }
 .input-label-street{
     position: absolute;
-left: 125px;
-top: 320px;
-    font-size: 20px;
+right: 397px;
+    font-size: 13px;
   
 }
 .input-label-house-number{
     position: absolute;
-left: 410px;
-top: 320px;
-    font-size: 20px;
+left: 250px;
+
+    font-size: 13px;
   
 }
 .input-label-city{
     position: absolute;
-left: 120px;
-top: 397px;
-    font-size: 20px;
+left: 70px;
+top: 283px;
+    font-size: 13px;
   
 }
 .input-label-post-code{
     position: absolute;
-left: 410px;
-top: 397px;
-    font-size: 20px;
+left: 252px;
+top: 282px;
+    font-size: 13px;
   
+}
+.input-label-country{
+  position: absolute;
+  left: 252px;
+  top: 282px;
+      font-size: 13px;
 }
 .pass, .ema{
     padding-left: 10px;
     /* margin-bottom: 20px; */
-    font-size: 30px;
-    min-width: 70%;
-    max-width: 75%;
+
+    width: 350px;
     height: 5%;
-    border-radius: 50px;
-    border: 0;
+
+}
+.error-messages > ul> li{
+  list-style-type: none;
+  color: red;
+  font-size: 13px;
+}
+.error-messages{
+text-align: center;
+position: relative;
+top: -50px;
+right: 450px;
+}
+.already-reg{
+  text-align: center;
+  width: 350px;
+  border: solid 1px black;
+  height: 150px;
+  position: relative;
+  bottom: 300px;
+ left: 70%;
+}
+.already-reg>p{
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+}
+.already-reg > button {
+  font-size: 15px;
+  width: 250px;
+  height: 40px;
+  top:40px;
+  left: 120px;
 }
