@@ -11,10 +11,12 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   const navigate = useNavigate()
-
   const [open, setOpen] = useState(false)
   const [openBag, setOpenBag] = useState(false)
   const token = localStorage.getItem('token')
+  const goToLogin =()=>{
+    navigate('/login')
+  }
   useEffect(() => {
     // Get the token from localStorage whenever needed
     localStorage.getItem('token')
@@ -112,22 +114,39 @@ const Header = () => {
   const logout = () => {
     localStorage.removeItem('token')
   }
-  const tokenValidationShopping = () => {
-    if (localStorage.getItem('token')) {
-      return (
-        <div className="shopping-bag-text">
-          <p>{/* {user && user.profile[0].firstName}'s Shopping Bag */}</p>
-        </div>
-      )
-    } else {
-      return (
-        <div className="shopping-bag-text">
-          <p>Your Shopping Bag</p>
-          <button>Continue</button>
-        </div>
-      )
-    }
+  const goToCheckout = () => {
+    navigate('/checkout')
   }
+  let totalSum = 0;
+  const sum = () =>{
+    const bag = JSON.parse(localStorage.getItem("shoppingBag")) || [];
+for(const item of bag){
+    totalSum += item.price;
+
+}
+  }
+  sum()
+  const tokenValidationShopping = () => {
+    const bag = JSON.parse(localStorage.getItem("shoppingBag")) || [];
+    return (
+      <div className="shopping-bag-text">
+        <p>Your Shopping Bag</p>
+        <ul>
+      {bag.map((item, index) => (
+        <li  key={index}>{item.name}- Quantity: {item.quantity}</li>
+      ))}
+       <p>Your total:{totalSum.toFixed(2)}</p>
+    </ul>
+        {localStorage.getItem('token') ? (
+          <button onClick={goToCheckout}>CheckOut</button>
+         
+        ) : (
+          <button onClick={goToLogin}>Please Log in to proceed</button>
+        )}
+      </div>
+    );
+  };
+  
   return (
     <div id="top">
       <header className="main-header" user={user}>
@@ -145,7 +164,10 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
-        <button className="nav-buttons" onClick={() => navigate('/shop')}>
+        <button className="nav-buttons" onClick={() => {
+            const storeSection = document.getElementById('store')
+            storeSection.scrollIntoView({ behavior: 'smooth' })
+          }}>
           Shop<span></span>
           <span></span>
           <span></span>

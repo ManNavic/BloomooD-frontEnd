@@ -5,7 +5,8 @@ import ContactUs from '../contactUs/index'
 import Footer from '../../components/footer/footer.js'
 import { Element, animateScroll as scroll } from 'react-scroll'
 import AboutUS from '../aboutUs/aboutUs'
-import WHy from '../../components/whyBloomood/why.js'
+import Why from '../../components/whyBloomood/why.js'
+import StoreItems from '../storeItems/carousel'
 
 const Index = () => {
   return (
@@ -26,7 +27,6 @@ const Index = () => {
         <Slider />
       </div>
       <div
-        className="div"
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -37,8 +37,19 @@ const Index = () => {
         data-aos-anchor-placement="top-center"
       >
 
-          <WHy />
+          <Why />
   
+      </div>
+      <div   className="div"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
+        <StoreItems />
       </div>
       <div className="div" data-aos="fade-up"
         data-aos-offset="200"
