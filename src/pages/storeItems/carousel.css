@@ -1,0 +1,110 @@
+
+  .product-name {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+
+  }
+  .latin-name{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .carusel-title{
+    padding-top: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .product--image:hover{
+      transform: scale(1.1);
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 320px;
+        border-radius: 5px;
+        padding-top: 150px;
+        margin: 50px 1rem;
+        text-align: center;
+        font-family: arial;
+        overflow: auto;
+        background-color: rgb(144, 238, 144)
+        
+    }
+    
+    .price {
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .card button:hover {
+        opacity: 0.7;
+    }
+    .description{
+        padding: 5px;
+        font-size: 15px;
+        height: 80px;
+        overflow-y: scroll;
+        font-family: sans-serif;
+    }
+    .storeItem-main{
+        margin-top: 200px;
+        height: 110vh;
+        text-align: center;
+        background-color: rgb(228, 244, 228);
+    }
+    .cards-cont{
+        height: 900px;
+    }
+    .image-cont{
+        display: flex;
+        justify-content: flex-end; 
+        border: solid 1px black;
+    }
+    .product--image {
+      height: 22em;
+      position: absolute;
+      top: -150px;
+      left: -30px;
+    }
+    .buttons-cont{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons-cont button{
+        width: 300px;
+        height: 50px;
+        font-size: 17px;
+        border-radius: 10px;
+        border: solid 1px grey;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: 0.1em;
+    }
+    .carusel-p{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: 0.1em;
+    }
