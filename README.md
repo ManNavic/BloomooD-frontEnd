@@ -1,51 +1,37 @@
+# Bloomood Plant Shop
 
-    <h1>Bloomood Plant Shop</h1>
+![Bloomood Logo](link-to-your-logo.png)
 
-    <h2>Overview</h2>
-    <p>
-        Bloomood is a basic plant shop website that allows users to register, log in, and add items to their shopping cart for purchase. This project was developed to provide users with a seamless and intuitive shopping experience for all their plant needs.
-    </p>
+## Overview
 
-    <h2>Technologies Used</h2>
-    <ul>
-        <li><strong>Frontend:</strong> React</li>
-        <li><strong>Backend:</strong> Node.js and Express.js</li>
-        <li><strong>Database:</strong> MongoDB</li>
-    </ul>
+Bloomood is a basic plant shop website that allows users to register, log in, and add items to their shopping cart for purchase. This project was developed to provide users with a seamless and intuitive shopping experience for all their plant needs.
 
-    <h2>Features</h2>
-    <ul>
-        <li>User Registration and Login: Secure user accounts for a personalized experience.</li>
-        <li>Plant Catalog: Browse and explore a wide variety of plants.</li>
-        <li>Shopping Cart: Add and manage plants for purchase.</li>
-        <li>Database Management: MongoDB used for storing and managing plant and user data.</li>
-    </ul>
+## Technologies Used
 
-    <h2>Usage</h2>
-    <ol>
-        <li><strong>Clone the Repository:</strong>
-            <pre><code>git clone https://github.com/your-username/bloomood-plant-shop.git
-cd bloomood-plant-shop
-</code></pre></li>
-        <li><strong>Install Dependencies:</strong>
-            <pre><code>npm install</code></pre>
-        </li>
-        <li><strong>Run the Application:</strong>
-            <ul>
-                <li><strong>Start the backend server:</strong>
-                    <pre><code>cd backend
-npm start</code></pre>
-                </li>
-                <li><strong>Start the frontend React app:</strong>
-                    <pre><code>cd frontend
-npm start</code></pre>
-                </li>
-            </ul>
-        </li>
-        <li><strong>Access the Application:</strong> Open your web browser and visit <a href="http://localhost:3000">http://localhost:3000</a> to use Bloomood Plant Shop.</li>
-    </ol>
+- **Frontend:** React
+- **Backend:** Node.js and Express.js
+- **Database:** MongoDB
 
+## Features
 
+- User Registration and Login: Secure user accounts for a personalized experience.
+- Plant Catalog: Browse and explore a wide variety of plants.
+- Shopping Cart: Add and manage plants for purchase.
+- Database Management: MongoDB used for storing and managing plant and user data.
 
-=
+## Usage
 
+1. **Clone the Repository:**
+   ```bash
+   git clone git@github.com:ManNavic/BloomooD-frontEnd.git
+   cd BloomooD-frontEnd
+   npm install
+   npm start
+```
+2. **Clone the BackEnd Repository:**
+   ```bash
+   git clone git@github.com:ManNavic/BloomooD-backend.git
+   cd BloomooD-backend
+   npm install
+   npm start
+```
