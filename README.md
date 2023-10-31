@@ -28,6 +28,7 @@ Bloomood is a basic plant shop website that allows users to register, log in, an
    npm install
    npm start
 ```
+
 2. **Clone the BackEnd Repository:**
    ```bash
    git clone git@github.com:ManNavic/BloomooD-backend.git
