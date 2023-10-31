@@ -27,7 +27,6 @@ Bloomood is a basic plant shop website that allows users to register, log in, an
    cd BloomooD-frontEnd
    npm install
    npm start
-```
 
 2. **Clone the BackEnd Repository:**
    ```bash
@@ -35,4 +34,3 @@ Bloomood is a basic plant shop website that allows users to register, log in, an
    cd BloomooD-backend
    npm install
    npm start
-```
