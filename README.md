@@ -1,6 +1,6 @@
 # Bloomood Plant Shop
 
-![Bloomood gif](.assets/images/gif.gif)
+![Bloomood gif](assets/images/gif.gif)
 
 ## Overview
 
