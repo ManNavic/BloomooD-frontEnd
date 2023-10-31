@@ -1,6 +1,6 @@
 # Bloomood Plant Shop
 
-![Bloomood Logo](link-to-your-logo.png)
+![Bloomood gif](.assets/images/gif.gif)
 
 ## Overview
 
