@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Bloomood Plant Shop</title>
-</head>
-<body>
+
     <h1>Bloomood Plant Shop</h1>
 
     <h2>Overview</h2>
@@ -53,5 +48,4 @@ npm start</code></pre>
 
 
 =
-</body>
-</html>
+
